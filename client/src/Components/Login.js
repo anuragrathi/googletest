@@ -4,7 +4,7 @@ import "./login.css"
 const Login = () => {
     console.log("stage1");
     const loginwithgoogle = ()=>{
-    window.open("http://localhost:5858/auth/google/callback", "_self");
+    window.open("http://localhost:5858/api/auth/google/callback", "_self");
     }
     console.log("stage1");
 
