@@ -3,10 +3,11 @@ import "./login.css"
 
 const Login = () => {
     console.log("stage1");
-    const loginwithgoogle = ()=>{
-    window.open("http://localhost:5858/api/auth/google/callback", "_self");
-    }
-    console.log("stage1");
+    const loginwithgoogle = () => {
+        const apiBaseUrl = process.env.REACT_APP_API_BASE_URL || "http://localhost:5858";
+        window.open(`${apiBaseUrl}/api/auth/google`, "_self");
+      };
+      
 
   return (
     <>
